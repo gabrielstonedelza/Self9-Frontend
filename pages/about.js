@@ -23,7 +23,7 @@ const About = () => {
   const handleContactForm = async (e) => {
     e.preventDefault();
     toast.success("Please wait,processing your data");
-    const apiUrl = `http://127.0.0.1:8000/api/contact_self9/`;
+    const apiUrl = `http://64.227.22.163:8000/api/contact_self9/`;
     const res = await fetch(apiUrl, {
       body: JSON.stringify({
         name: name,

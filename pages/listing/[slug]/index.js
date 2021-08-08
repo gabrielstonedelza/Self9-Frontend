@@ -82,10 +82,10 @@ export default listingDetail;
 
 export async function getServerSideProps(context) {
   const results = await fetch(
-    `http://127.0.0.1:8000/api/listings/${context.params.slug}/`
+    `http://64.227.22.163:8000/api/listings/${context.params.slug}/`
   );
   const res = await fetch(
-    `http://127.0.0.1:8000/api/listing/${context.params.slug}/`
+    `http://64.227.22.163:8000/api/listing/${context.params.slug}/`
   );
   const listingData = await results.json();
   const galleryListing = await res.json();

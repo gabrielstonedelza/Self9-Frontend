@@ -25,7 +25,7 @@ export default function Home({data}) {
 
 export async function getServerSideProps(context){
 
-  const res = await fetch("http://127.0.0.1:8000/api/all_listings/");
+  const res = await fetch("http://64.227.22.163:8000/api/all_listings/");
   const data = await res.json()
 
   return {

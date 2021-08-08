@@ -13,7 +13,7 @@ const Contactform = ({ slug }) => {
   const handleContactForm = async (e) => {
     e.preventDefault();
     toast.success("Please wait,processing your data")
-    const apiUrl = `http://127.0.0.1:8000/api/contact_us/${slug}/`
+    const apiUrl = `http://64.227.22.163:8000/api/contact_us/${slug}/`
     const res = await fetch(apiUrl, {
       body: JSON.stringify({
         listing: slug,
